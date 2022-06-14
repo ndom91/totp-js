@@ -1,0 +1,33 @@
+{
+  "name": "totp-js",
+  "version": "0.0.1",
+  "description": "No dependency totp generation library",
+  "main": "totp.js",
+  "exports": {
+    ".": {
+      "require": "./build/index.cjs",
+      "import": "./build/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "node esbuild.js"
+  },
+  "keywords": [
+    "totp",
+    "hmac",
+    "authenticator"
+  ],
+  "author": "ndom91 <yo@ndo.dev> (https://ndo.dev/)",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.43",
+    "eslint": "^8.17.0",
+    "prettier": "^2.7.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
